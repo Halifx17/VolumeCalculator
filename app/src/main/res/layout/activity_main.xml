@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Volume Calculator"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="By: Yap, Fredirick L. BSIT-2 Block 1 C070-C071"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/Title"
+        app:layout_constraintStart_toStartOf="@+id/Title"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <TextView
+        android:id="@+id/Choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Choose a shape. . ."
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/Title"
+        app:layout_constraintStart_toStartOf="@+id/Title"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <Button
+        android:id="@+id/Cube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:onClick="CubeFunction"
+        android:text="Cube"
+        app:layout_constraintEnd_toEndOf="@+id/Choice"
+        app:layout_constraintStart_toStartOf="@+id/Choice"
+        app:layout_constraintTop_toBottomOf="@+id/Choice" />
+
+    <Button
+        android:id="@+id/Rectangular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Rectangular"
+        android:onClick="RectangularFunction"
+        app:layout_constraintEnd_toEndOf="@+id/Cube"
+        app:layout_constraintStart_toStartOf="@+id/Cube"
+        app:layout_constraintTop_toBottomOf="@+id/Cube" />
+
+    <Button
+        android:id="@+id/Sphere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Sphere"
+        android:onClick="SphereFunction"
+        app:layout_constraintEnd_toEndOf="@+id/Rectangular"
+        app:layout_constraintStart_toStartOf="@+id/Rectangular"
+        app:layout_constraintTop_toBottomOf="@+id/Rectangular" />
+
+    <Button
+        android:id="@+id/Cylinder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Cylinder"
+        android:onClick="CylinderFunction"
+        app:layout_constraintEnd_toEndOf="@+id/Sphere"
+        app:layout_constraintStart_toStartOf="@+id/Sphere"
+        app:layout_constraintTop_toBottomOf="@+id/Sphere" />
+
+    <Button
+        android:id="@+id/Cone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Cone"
+        android:onClick="ConeFunction"
+        app:layout_constraintEnd_toEndOf="@+id/Cylinder"
+        app:layout_constraintStart_toStartOf="@+id/Cylinder"
+        app:layout_constraintTop_toBottomOf="@+id/Cylinder" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
